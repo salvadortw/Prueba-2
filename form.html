@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>POSTULA</h1>
+        <p>Completa este formulario y nos pondremos en contacto contigo.</p>
+        <form autocomplete="off">
+            <div class="row">
+                <div class="column">
+                    <label for="rut">RUT <span class="required-color">*</span></label>
+                    <input type="text" id="rut" placeholder="Sin puntos ni guion. Ej: 123456789" required>
+                    <span id="rut-error" class="hide required-color error-message">
+                      RUT inválido.
+                    </span>
+                    <span id="rut-vacio" class="hide required-color error-message">
+                      Este campo no puede estar vacío.
+                    </span>
+                </div>
+                <div class="column">
+                    <label for="nombre">Nombre <span class="required-color">*</span></label>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre." required>
+                    <span id="nombre-error" class="hide required-color error-message">
+                      Nombre inválido.
+                    </span>
+                    <span id="nombre-vacio" class="hide required-color error-message">
+                      Este campo no puede estar vacío.
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="apellidop">Apellido Paterno <span class="required-color">*</span></label>
+                    <input type="text" id="apellidop" placeholder="Ingresa tu apellido." required>
+                    <span id="apellidop-error" class="hide required-color error-message">
+                      Apellido inválido.
+                    </span>
+                    <span id="apellidop-vacio" class="hide required-color error-message">
+                      Este campo no puede estar vacío.
+                    </span>
+                </div>
+                <div class="column">
+                    <label for="apellidom">Apellido Materno <span class="required-color">*</span></label>
+                    <input type="text" id="apellidom" placeholder="Ingresa tu apellido." required>
+                    <span id="apellidom-error" class="hide required-color error-message">
+                      Apellido inválido.
+                    </span>
+                    <span id="apellidom-vacio" class="hide required-color error-message">
+                      Este campo no puede estar vacío.
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="email">Email <span class="required-color">*</span></label>
+                    <input type="email" id="email" placeholder="Ingresa tu correo." required>
+                    <span id="email-error" class="hide required-color error-message">
+                      Email inválido.
+                    </span>
+                    <span id="email-vacio" class="hide required-color error-message">
+                      Este campo no puede estar vacío.
+                    </span>
+                </div>
+                <div class="column">
+                    <label for="celular">Número Celular <span class="required-color">*</span></label>
+                    <input type="tel" id="celular" placeholder="Ingresa tu celular." required>
+                    <span id="celular-error" class="hide required-color error-message">
+                      Número inválido.
+                    </span>
+                    <span id="celular-vacio" class="hide required-color error-message">
+                      Este campo no puede estar vacío.
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="edad">Edad <span class="required-color">*</span></label>
+                    <input type="number" id="edad" placeholder="Ingresa tu edad." required>
+                    <span id="edad-error" class="hide required-color error-message">
+                      Edad inválida.
+                    </span>
+                    <span id="edad-vacio" class="hide required-color error-message">
+                      Este campo no puede estar vacío.
+                    </span>
+                </div>
+                <div class="column">
+                    <label for="profesion">Profesión <span class="required-color">*</span></label>
+                    <input type="text" id="profesion" placeholder="Ingresa tu profesión." required>
+                    <span id="profesion-error" class="hide required-color error-message">
+                      Profesión inválida.
+                    </span>
+                    <span id="profesion-vacio" class="hide required-color error-message">
+                      Este campo no puede estar vacío.
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="fechanac">Fecha de Nacimiento <span class="required-color">*</span></label>
+                    <input type="date" id="fechanac" placeholder="Ingresa tu fecha de nacimiento." required>
+                    <span id="fechanac-error" class="hide required-color error-message">
+                      Fecha inválida.
+                    </span>
+                    <span id="fechanac-vacio" class="hide required-color error-message">
+                      Este campo no puede estar vacío.
+                    </span>
+                </div>
+                <div class="column">
+                    <label for="genero">Género: <span class="required-color">*</span></label>
+                    <select id="genero" name="genero" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select><br>
+                    <span id="genero-error" class="hide required-color error-message">
+                      Género inválido.
+                    </span>
+                    <span id="genero-vacio" class="hide required-color error-message">
+                      Este campo no puede estar vacío.
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="motivo">Motivación <span class="required-color">*</span></label>
+                    <textarea id="motivo" placeholder="Cuéntanos por qué quieres postular a este trabajo." rows="3" required></textarea>
+                    <span id="motivo-error" class="hide required-color error-message">
+                      Campo inválido.
+                    </span>
+                    <span id="motivo-vacio" class="hide required-color error-message">
+                      Este campo no puede estar vacío.
+                    </span>
+                </div>
+            </div>
+            <button type="button" id="crear-carta">Crear carta</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Your jQuery Script -->
+    <script src="js/form.js"></script>
+</body>
+</html>

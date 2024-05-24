@@ -1,0 +1,132 @@
+/* Resetting default styles and applying global styles */
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background: linear-gradient(
+        130deg,
+        #65a30d,
+        #4d7c0f
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; /* To ensure some space around the container on small screens */
+}
+
+.container {
+    background-color: #ffffff;
+    width: 60%;
+    min-width: 420px;
+    padding: 35px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2); /* Optional: Adds a slight shadow for better visibility */
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #1a2e05;
+}
+
+p {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: #606060;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form {
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;
+}
+
+.row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #1a2e05;
+    font-size: 14px;
+}
+
+textarea,
+input,
+select {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid #c4cae0;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #65a30d;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    background: linear-gradient(
+        130deg,
+        #65a30d,
+        #4d7c0f
+    );
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer; /* Optional: Changes the cursor to a pointer when hovering over the button */
+}
+
+button:hover {
+    background: linear-gradient(
+        130deg,
+        #4d7c0f,
+        #65a30d
+    ); /* Optional: Adds a hover effect to the button */
+}
+
+.required-color {
+    color: #ff4747;
+}
+
+.error {
+    border-color: #ff4747;
+}
+
+.valid {
+    border-color: #37a137;
+}
+
+.hide {
+    display: none;
+}
+
+span {
+  font-size: 14px;
+}
+
+
