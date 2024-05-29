@@ -1,3 +1,4 @@
+/* Estilos generales */
 *{
   margin: 0;
   padding: 0;
@@ -9,6 +10,10 @@
 body {
   background-color: #f7fee7;
 }
+/* Estilos del encabezado */
+.section-header .logo {
+  color: #4d7c0fc3;
+}
 
 .section-header {
   position: relative;
@@ -17,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: url(/images/bg.png) no-repeat;
+  background: url(https://png.pngtree.com/background/20210710/original/pngtree-blue-sky-and-white-clouds-environmental-poster-picture-image_1049282.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -90,7 +95,7 @@ header .info-btn:hover {
 
 .content{
   max-width: 650px;
-  margin: 60px 100px;
+  margin: 40px 100px;
 }
 
 .content .info h2{
@@ -132,6 +137,7 @@ header .info-btn:hover {
 .content .info-btn:hover{
     background: #3f6212;
 }
+/* Fin estilos del encabezado */
 
 .container-info {
     position: relative;
@@ -142,6 +148,7 @@ header .info-btn:hover {
     gap: 150px;
 }
 
+/* Sección información */
 .content-info {
     display: flex;
     flex-direction: column;
@@ -166,16 +173,16 @@ header .info-btn:hover {
 
 .container-info .image {
     display: flex;
-    align-items: center;  /* Centra verticalmente la imagen dentro de su celda */
+    align-items: center;  
 }
 
 .container-info .image img {
-    max-width: 100%;  /* Asegúrate de que la imagen no exceda el ancho de su contenedor */
+    max-width: 100%;  
     border-radius: 5px;
 }
 
 .container-info .btn {
-    width: 180px;
+    width: 140px;
     color: #fff;
     background: #4d7c0f;
     text-decoration: none;
@@ -187,12 +194,15 @@ header .info-btn:hover {
     transition: 0.3s;
     transition-property: background;
     text-align: center;
+    cursor: pointer;
 }
 
 .container-info .btn:hover{
     background: #3f6212;
 }
+/* Fin sección información */
 
+/* Sección servicios */
 .container-servicios {
   padding: 0 100px;
   margin-top: 70px;
@@ -260,7 +270,9 @@ header .info-btn:hover {
 .features .card a:hover{
   color: #111;
 }
+/* Fin sección servicios */
 
+/* Footer */
 footer{
     position: relative;
     display: grid;
@@ -324,8 +336,9 @@ footer .column > a:hover{
     font-size: 0.8rem;
     text-align: center;
 }
+/* Fin footer */
 
-
+/* Responsive */
 @media (max-width: 960px) {
     header .navigation{
       display: none;
@@ -437,3 +450,4 @@ footer .column > a:hover{
         grid-template-columns: 1fr 150px;
     }
 }
+/* Fin esponsive */

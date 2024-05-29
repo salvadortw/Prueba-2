@@ -1,0 +1,285 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f7fee7;
+    margin: 0;
+    padding: 20px;
+}
+/* Estilos del encabezado */
+.section-header .logo {
+    color: #4d7c0fc3;
+  }
+  
+.section-header {
+    width: 100%;
+    display: flex;
+  }
+  
+  header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 10px 100px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  label{
+    display: none;
+  }
+  
+  header .logo{
+    position: relative;
+    color: #555;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  header .navigation .link {
+    color: #555;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  
+  header .navigation a:not(:last-child){
+    margin-right: 30px;
+  }
+  
+  header .navigation .link:hover{
+    color: #4d7c0f;
+  }
+  
+  header .info-btn {
+      color: #fff;
+      background: #4d7c0f;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: 0.3s;
+      transition-property: background;
+    }
+    
+  header .info-btn:hover {
+      background: #3f6212;
+  }
+  
+  #check{
+      z-index: 3;
+      display: none;
+  }
+
+h1 {
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 10px;
+    color: #333;
+}
+/* Fin estilos del encabezado */
+
+/* Estilos contenedor clima */
+h1 span {
+    color: #4d7c0f;
+}
+
+#weather-forecast {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.forecast-day {
+    background-color: #ecfccb;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.forecast-day img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.forecast-day h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px; 
+}
+
+.forecast-day p {
+    margin: 10px 0;
+    line-height: 1.2; 
+}
+/* Fin estilos contenedor clima */
+
+/* Estilos footer */
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 100px;
+    margin-top: 5rem;
+}
+
+footer .column p{
+    color: #555;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    color: #555;
+    border: 1px solid #555;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+footer .column .socials a:hover{
+    color: #fff;
+    background-color: #4d7c0f;
+    border-color: #4d7c0f;
+}
+
+footer .column h4{
+    color: #4d7c0f;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .column > a{
+    display: block;
+    color: #555;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+footer .column > a:hover{
+    color: #3f6212;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #555;
+    font-size: 0.8rem;
+    text-align: center;
+}
+/* Fin estilos footer */
+
+/* Responsive */
+@media (max-width: 960px) {
+    header .navigation{
+      display: none;
+    }
+  
+    label{
+      display: block;
+      font-size: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      transition-property: color;
+    }
+  
+    label:hover{
+      color: #3f6212 ;
+    }
+  
+    label .close-btn{
+      display: none;
+    }
+  
+    #check:checked ~ header .navigation{
+      z-index: 2;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.8);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #check:checked ~  header .navigation a{
+      font-weight: 700;
+      margin-right: 0;
+      margin-bottom: 50px;
+      letter-spacing: 2px;
+    }
+  
+    #check:checked ~ header label .close-btn{
+      z-index: 2;
+      position: fixed;
+      display: block;
+    }
+  
+    #check:checked ~ header label .menu-btn{
+      display: none;
+    }
+  
+    label .menu-btn{
+      position: absolute;
+    }
+  
+    header .logo{
+      position: absolute;
+    }
+
+    footer {
+        padding: 0 50px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    footer {
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        grid-template-columns: 1fr 150px;
+    }
+}
+/* Fin responsive */

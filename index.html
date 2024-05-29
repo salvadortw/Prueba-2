@@ -1,111 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadatos del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Título de la página -->
+    <title>Chile Limpio</title>
+    <!-- Icono de la pestaña -->
+    <link rel="icon" type="image/jpg" href="images/icon.png"/>
+    <!-- Fuentes -->
     <link 
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" 
         rel="stylesheet"
     >
+    <!-- Iconos -->
     <link 
         rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
     >
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <section class="section-header">
+    <!-- Sección de encabezado -->
+    <section class="section-header" id="inicio">
+        <!-- Botón de menú desplegable -->
         <input type="checkbox" id="check">
         <header>
           </div>
-          <h2><a href="#" class="logo">Logo</a></h2>
+          <h2><a href="#" class="logo">CHILE LIMPIO</a></h2>
+          <!-- Navegación -->
           <div class="navigation">
-            <a href="#" class="link">Inicio</a>
+            <a href="#inicio" class="link">Inicio</a>
             <a href="#info" class="link">Info</a>
             <a href="#servicios" class="link">Servicios</a>
+            <a target="_blank" href="clima.html" class="link">Clima</a>
             <a href="#footer" class="link">Acerca de</a>
-            <a href="form.html" class="info-btn">Postula</a>
+            <a target="_blank" href="form.html" class="info-btn">Postula</a>
           </div>
           <label for="check">
             <i class="ri-menu-line menu-btn"></i>
             <i class="ri-close-line close-btn"></i>
           </label>
         </header>
-
+        <!-- Contenido principal -->
         <div class="content">
             <div class="info">
-              <h2>Like Nature <br><span>Be Creative!</span></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              <a href="#" class="info-btn">More info</a>
+              <h2>Chile Limpio: <br><span>Unidos por la Naturaleza</span></h2>
+              <p>Fundada en 2015, Chile Limpio es una empresa ambientalista 
+                comprometida con la conservación y protección de los ecosistemas 
+                únicos de la Isla de Chiloé. Su misión es promover prácticas 
+                sostenibles, restaurar hábitats naturales y educar a la comunidad 
+                sobre la importancia del cuidado ambiental.
+              </p>
+              <a href="#" class="info-btn">Leer más</a>
             </div>
         </div>
     </section>
+    <!-- Fin sección de encabezado -->
 
+    <!-- Sección de información -->
     <header class="container-info" id="info">
         <div class="content-info">
             <h2>¿QUÉ <span class="span-info">HACEMOS?</span></h2>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus rem eos aliquid quo rerum
-                temporibus ipsum distinctio numquam ut omnis placeat, nam sint atque quos dolorem laborum? Rerum, esse
-                dolorem.
+                Nos inspira la belleza de la Isla de Chiloé y la urgente 
+                necesidad de proteger su entorno natural único. 
+                Creemos en la responsabilidad colectiva de preservar 
+                nuestros ecosistemas para las generaciones futuras. 
             </p>
-            <a class="btn">Get Started</a>
+            <a class="btn">Más info</a>
         </div>
 
         <div class="image">
             <img src="images/info.jpg">
         </div>
     </header>
+    <!-- Fin sección de información -->
 
+    <!-- Sección de servicios -->
     <section class="container-servicios" id="servicios">
         <h2 class="title"><span class="span-servicios">NUESTROS</span> SERVICIOS</h2>
         <div class="features">
             <div class="card">
-                <span><i class="ri-money-dollar-box-line"></i></span>
-                <h4>Free Tutorials</h4>
+                <span><i class="ri-hand-heart-line"></i></span>
+                <h4>Recolección de residuos</h4>
                 <p>
-                    My tutorials in my channel "AsmrProg" need to pay anything.
+                    Organización y ejecución de campañas para recoger desechos en áreas naturales.
                 </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                <a target="_blank" href="form.html">Únete <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="card">
-                <span><i class="ri-bug-line"></i></span>
-                <h4>Fix Your Bugs</h4>
+                <span><i class="ri-megaphone-line"></i></span>
+                <h4>Descontaminación costera</h4>
                 <p>
-                    You have any problem in your codes? Tell me, i will help you fix it.
+                    Implementación de técnicas para restaurar ecosistemas afectados por la contaminación.
                 </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                <a target="_blank" href="form.html">Únete <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="card">
-                <span><i class="ri-history-line"></i></span>
-                <h4>On Time Videos</h4>
+                <span><i class="ri-service-line"></i></span>
+                <h4>Sensibilización ambiental</h4>
                 <p>
-                    We have video each 4 days, So check channel every 4 days to watch it!
+                    Realización de talleres y charlas educativas para promover la conciencia sobre el medio ambiente.
                 </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                <a target="_blank" href="form.html">Únete <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="card">
                 <span><i class="ri-shake-hands-line"></i></span>
-                <h4>Cooperation</h4>
+                <h4>Monitoreo ambiental</h4>
                 <p>
-                    You want we worrk together? Write email to us, we will read it.
+                    Evaluación periódica de la calidad del aire, agua y suelo para identificar áreas de intervención prioritaria.
                 </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                <a target="_blank" href="form.html">Únete <i class="ri-arrow-right-line"></i></a>
             </div>
         </div>
     </section>
+    <!-- Fin sección de servicios -->
 
-
-
+    <!-- Pie de página -->
     <footer class="container" id="footer">
         <div class="column">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Chile Limpio: Pioneros en la Conservación Ambiental
             </p>
             <div class="socials">
                 <a href="#"><i class="ri-youtube-line"></i></a>
-                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a target="_blank" href="https://www.instagram.com/proyectochilelimpio/?igshid=M2RkZGJiMzhjOQ%3D%3D"><i class="ri-instagram-line"></i></a>
                 <a href="#"><i class="ri-twitter-line"></i></a>
             </div>
         </div>
@@ -130,9 +151,16 @@
     </footer>
 
     <div class="copyright">
-        Copyright © 2023. Todos los derechos reservados.
+        Copyright © Chile Limpio 2024. Todos los derechos reservados.
     </div>
+    <!-- Fin pie de página -->
 
+    <!-- Scripts -->
     <script src="js/index.js"></script>
+    <script 
+        src="https://code.jquery.com/jquery-3.7.1.js" 
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>

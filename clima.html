@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Clima en Chiloé</title>
+    <!-- Icono de la pestaña -->
+    <link rel="icon" type="image/jpg" href="images/icon.png"/>
+    <!-- Fuentes -->
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
+        rel="stylesheet"
+    >
+    <!-- Iconos -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    >
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/clima.css">
+</head>
+<body>
+    <!-- Sección de encabezado -->
+    <section class="section-header" id="inicio">
+        <input type="checkbox" id="check">
+        <header>
+          </div>
+          <h2><a href="index.html" class="logo">CHILE LIMPIO</a></h2>
+          <!-- Navegación -->
+          <div class="navigation">
+            <a href="#inicio" class="link">Inicio</a>
+            <a href="#info" class="link">Info</a>
+            <a href="#servicios" class="link">Servicios</a>
+            <a href="clima.html" class="link">Clima</a>
+            <a href="#footer" class="link">Acerca de</a>
+            <a target="_blank" href="form.html" class="info-btn">Postula</a>
+          </div>
+          <label for="check">
+            <i class="ri-menu-line menu-btn"></i>
+            <i class="ri-close-line close-btn"></i>
+          </label>
+        </header>
+    </section>
+    <!-- Fin sección de encabezado -->
+
+    <!-- Título y contenedor del clima -->
+    <h1><span>Pronóstico</span> del tiempo en Chiloé</h1>
+    <div id="weather-forecast"></div>
+    <!-- Fin contenedor del clima -->
+
+    <!-- Pie de página -->
+    <footer class="container" id="footer">
+        <div class="column">
+            <p>
+                Chile Limpio: Pioneros en la Conservación Ambiental
+            </p>
+            <div class="socials">
+                <a href="#"><i class="ri-youtube-line"></i></a>
+                <a target="_blank" href="https://www.instagram.com/proyectochilelimpio/?igshid=M2RkZGJiMzhjOQ%3D%3D"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Empresa</h4>
+            <a href="#">Negocios</a>
+            <a href="#">Asociación</a>
+            <a href="#">Red</a>
+        </div>
+        <div class="column">
+            <h4>Quiénes somos</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Canales</a>
+            <a href="#">Sponsors</a>
+        </div>
+        <div class="column">
+            <h4>Contacto</h4>
+            <a href="#">Contacte con nosotros</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Condiciones de uso</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © Chile Limpio 2024. Todos los derechos reservados.
+    </div>
+    <!-- Fin pie de página -->
+
+    <!-- Scripts -->
+    <script src="js/clima.js"></script>
+    <script 
+        src="https://code.jquery.com/jquery-3.7.1.js" 
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
